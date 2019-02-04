@@ -111,3 +111,153 @@ a img {
 :focus {
   outline: 0;
 }
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+.main-container {
+  width: 70%;
+  height: 100%;
+}
+.body {
+  border: 1px solid black;
+}
+.body .navbar {
+  border: 1px solid black;
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+.body .navbar .nav-open-close {
+  border: 1px solid black;
+  width: 2vw;
+  align-self: center;
+}
+.body .navbar .nav-container {
+  border: 1px solid black;
+  width: 98vw;
+}
+.body .navbar .nav-container .nav-container-person {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body .navbar .nav-container .nav-container-person .nav-container-person-img {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .nav-container-person .nav-container-person-info {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .nav-container-person .nav-container-person-info p {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .navbar-links {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .navbar-links .nav-container-link {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body .navbar .nav-container .navbar-links .nav-container-link i {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .navbar-links .nav-container-link h4 {
+  border: 1px solid black;
+}
+.body .navbar .nav-container .nav-container-social-media {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.body .navbar .nav-container .nav-container-social-media a {
+  border: 1px solid black;
+}
+.body .main-container {
+  border: 1px solid black;
+  width: 80vw;
+}
+.body .main-container .introduction {
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body .main-container .introduction h1 {
+  border: 1px solid black;
+}
+.body .main-container .introduction p {
+  border: 1px solid black;
+}
+.body .main-container .introduction a {
+  border: 1px solid black;
+}
+.body .main-container .portfolio {
+  border: 1px solid black;
+  height: 140vh;
+}
+.body .main-container .portfolio .portfolio-title {
+  border: 1px solid black;
+}
+.body .main-container .portfolio .portfolio-description {
+  border: 1px solid black;
+}
+.body .main-container .portfolio .portfolio-box-section {
+  border: 1px solid black;
+}
+.body .main-container .portfolio .portfolio-box-section .portfolio-img-box {
+  border: 1px solid black;
+}
+.body .main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-img {
+  border: 1px solid black;
+}
+.body .main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-description {
+  border: 1px solid black;
+}
+.body .main-container .about-me {
+  border: 1px solid black;
+}
+.body .main-container .about-me .about-me-title {
+  border: 1px solid black;
+}
+.body .main-container .about-me .about-me-photo {
+  border: 1px solid black;
+}
+.body .main-container .about-me .about-me-description {
+  border: 1px solid black;
+}
+.body .main-container .contact {
+  border: 1px solid black;
+}
+.body .main-container .contact .contact-title {
+  border: 1px solid black;
+}
+.body .main-container .contact .contact-description {
+  border: 1px solid black;
+}
+.body .main-container .contact .contact-user-information {
+  border: 1px solid black;
+}
+.body .main-container .contact .contact-message {
+  border: 1px solid black;
+}
+.body .main-container .contact .contact-send {
+  border: 1px solid black;
+}
+.body .main-container footer {
+  border: 1px solid black;
+}
+.body .main-container footer .footer-copyright {
+  border: 1px solid black;
+}
