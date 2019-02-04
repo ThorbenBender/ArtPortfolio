@@ -13,26 +13,38 @@
     .navbar {
         border: 1px solid black;
         height: 100vh;
-        width: 20vw;
+        width: 19.5vw;
         .flex(row);
+        background: @navbar-bckgr;
 
         .nav-open-close {
             border: 1px solid black;
             width: 2vw;
-            align-self: center;
+            margin: auto;
         }
 
         .nav-container {
             border: 1px solid black;
-            width: 98vw;
+            width: 100vw;
+            .flex(column);
 
             .nav-container-person {
                 border: 1px solid black;
                 .flex(row);
+                align-items: center;
+                height: 7vh;
                 justify-content: space-between;
+                margin: 8% 5%;
 
                 .nav-container-person-img {
                     border: 1px solid black;
+                    width: 40%;
+                    height: 100%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                    }
                 }
 
                 .nav-container-person-info {
@@ -40,37 +52,58 @@
 
                     h4 {
                         border: 1px solid black;
+                        margin: 4% 0% 0% 24%;
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 100;
                     }
 
                     p {
                         border: 1px solid black;
+                        font-size: .9rem;
+                        color: @navbar-col;
                     }
                 }
             }
 
             .navbar-links {
                 border: 1px solid black;
+                width: 100%;
 
                 .nav-container-link {
                     border: 1px solid black;
                     .flex(row);
-                    justify-content: space-between;
+                    justify-content: space-around;
+                    padding: 5% 0%;
+                    align-items: baseline;
 
                     i {
                         border: 1px solid black;
+                        // font-size: 1.3rem;
+                        // color: @navbar-col;
+                        // margin: 1% 0% 0% -18%;
+                        .navbar-i();
                     }
 
                     h4 {
                         border: 1px solid black;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin: 0% -17% 0% 0%;
+                        color: @navbar-col;
                     }
                 }
             }
 
             .nav-container-social-media {
-                border: 1px solid black;
+                margin: 10% border: 1px solid black;
                 .flex(row);
+                margin: 0 0 100% 0;
+                justify-content: space-around;
 
                 a {
+                    font-size: 1.25rem;
+                    color: @navbar-col;
                     border: 1px solid black;
                 }
             }
@@ -80,6 +113,10 @@
     .main-container {
         border: 1px solid black;
         width: 80vw;
+        background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background: blue;
 
         .introduction {
             border: 1px solid black;
@@ -89,21 +126,38 @@
             justify-content: center;
 
             h1 {
+                margin: -10% 0% 2.5% 0%;
                 border: 1px solid black;
+                font-size: 2rem;
+                color: @introductionh1;
             }
 
             p {
                 border: 1px solid black;
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 1.75;
+                color: @introductionh1;
+                font-weight: 100;
             }
 
             a {
+                margin: 5% 0% 0% 0%;
                 border: 1px solid black;
+                padding: 1.5% 3.9%;
+                border-radius: 10px;
+                background: @button-color;
+                color: @introductionh1;
+                text-decoration: none;
+                font-size: 1.5rem;
             }
         }
 
         .portfolio {
             border: 1px solid black;
             height: 140vh;
+            .flex(column);
+            align-items: center;
 
             .portfolio-title {
                 border: 1px solid black;

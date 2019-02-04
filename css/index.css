@@ -1,3 +1,8 @@
+.navbar-i {
+  font-size: 1.3rem;
+  color: #828486;
+  margin: 1% 0% 0% -18%;
+}
 html,
 body {
   border: 0;
@@ -128,63 +133,99 @@ a img {
 .body .navbar {
   border: 1px solid black;
   height: 100vh;
-  width: 20vw;
+  width: 19.5vw;
   display: flex;
   flex-direction: row;
+  background: #212528;
 }
 .body .navbar .nav-open-close {
   border: 1px solid black;
   width: 2vw;
-  align-self: center;
+  margin: auto;
 }
 .body .navbar .nav-container {
   border: 1px solid black;
-  width: 98vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 .body .navbar .nav-container .nav-container-person {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 7vh;
   justify-content: space-between;
+  margin: 8% 5%;
 }
 .body .navbar .nav-container .nav-container-person .nav-container-person-img {
   border: 1px solid black;
+  width: 40%;
+  height: 100%;
+}
+.body .navbar .nav-container .nav-container-person .nav-container-person-img img {
+  width: 80%;
+  height: 100%;
 }
 .body .navbar .nav-container .nav-container-person .nav-container-person-info {
   border: 1px solid black;
 }
 .body .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
   border: 1px solid black;
+  margin: 4% 0% 0% 24%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 .body .navbar .nav-container .nav-container-person .nav-container-person-info p {
   border: 1px solid black;
+  font-size: 0.9rem;
+  color: #828486;
 }
 .body .navbar .nav-container .navbar-links {
   border: 1px solid black;
+  width: 100%;
 }
 .body .navbar .nav-container .navbar-links .nav-container-link {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 5% 0%;
+  align-items: baseline;
 }
 .body .navbar .nav-container .navbar-links .nav-container-link i {
   border: 1px solid black;
+  font-size: 1.3rem;
+  color: #828486;
+  margin: 1% 0% 0% -18%;
 }
 .body .navbar .nav-container .navbar-links .nav-container-link h4 {
   border: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0% -17% 0% 0%;
+  color: #828486;
 }
 .body .navbar .nav-container .nav-container-social-media {
-  border: 1px solid black;
+  margin: 10% border: 1px solid black;
   display: flex;
   flex-direction: row;
+  margin: 0 0 100% 0;
+  justify-content: space-around;
 }
 .body .navbar .nav-container .nav-container-social-media a {
+  font-size: 1.25rem;
+  color: #828486;
   border: 1px solid black;
 }
 .body .main-container {
   border: 1px solid black;
   width: 80vw;
+  background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: blue;
 }
 .body .main-container .introduction {
   border: 1px solid black;
@@ -195,17 +236,35 @@ a img {
   justify-content: center;
 }
 .body .main-container .introduction h1 {
+  margin: -10% 0% 2.5% 0%;
   border: 1px solid black;
+  font-size: 2rem;
+  color: #F4F3F1;
 }
 .body .main-container .introduction p {
   border: 1px solid black;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.75;
+  color: #F4F3F1;
+  font-weight: 100;
 }
 .body .main-container .introduction a {
+  margin: 5% 0% 0% 0%;
   border: 1px solid black;
+  padding: 1.5% 3.9%;
+  border-radius: 10px;
+  background: #82AFAD;
+  color: #F4F3F1;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 .body .main-container .portfolio {
   border: 1px solid black;
   height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .body .main-container .portfolio .portfolio-title {
   border: 1px solid black;
