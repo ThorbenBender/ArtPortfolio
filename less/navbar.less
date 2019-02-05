@@ -1,0 +1,91 @@
+.navbar {
+    height: 100vh;
+    width: 19.5vw;
+    .flex(row);
+    background: @navbar-bckgr;
+
+    .nav-open-close {
+        width: 2vw;
+        margin: auto;
+        color: white;
+    }
+
+    .nav-container {
+        width: 100%;
+        .flex(column);
+        height: 100vh;
+
+        .nav-container-person {
+            .flex(row);
+            align-items: center;
+            height: 7vh;
+            justify-content: space-between;
+            margin: 8% 5%;
+
+            .nav-container-person-img {
+                width: 40%;
+                height: 100%;
+
+                img {
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+
+            .nav-container-person-info {
+
+                h4 {
+                    margin: 4% 0% 0% 24%;
+                    color: white;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: @navbar-col;
+                }
+            }
+        }
+
+        .navbar-links {
+            width: 100%;
+            .flex(column);
+            align-items: center;
+
+            .nav-container-link {
+                width: 70%;
+                .flex(row);
+                justify-content: space-between;
+                padding: 5% 0%;
+                align-items: baseline;
+
+                i {
+                    // font-size: 1.3rem;
+                    // color: @navbar-col;
+                    // margin: 1% 0% 0% -18%;
+                    .navbar-i();
+                }
+
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin: 0% -17% 0% 0%;
+                    color: @navbar-col;
+                }
+            }
+        }
+
+        .nav-container-social-media {
+            .flex(row);
+            margin-top: 57vh;
+            justify-content: space-around;
+            justify-self: flex-end;
+
+            a {
+                font-size: 1.25rem;
+                color: @navbar-col;
+            }
+        }
+    }
+}

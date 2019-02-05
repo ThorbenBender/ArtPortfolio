@@ -138,6 +138,86 @@ a img {
   display: flex;
   flex-direction: row;
 }
+.navbar {
+  height: 100vh;
+  width: 19.5vw;
+  display: flex;
+  flex-direction: row;
+  background: #212528;
+}
+.navbar .nav-open-close {
+  width: 2vw;
+  margin: auto;
+  color: white;
+}
+.navbar .nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar .nav-container .nav-container-person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 7vh;
+  justify-content: space-between;
+  margin: 8% 5%;
+}
+.navbar .nav-container .nav-container-person .nav-container-person-img {
+  width: 40%;
+  height: 100%;
+}
+.navbar .nav-container .nav-container-person .nav-container-person-img img {
+  width: 80%;
+  height: 100%;
+}
+.navbar .nav-container .nav-container-person .nav-container-person-info h4 {
+  margin: 4% 0% 0% 24%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.navbar .nav-container .nav-container-person .nav-container-person-info p {
+  font-size: 0.9rem;
+  color: #828486;
+}
+.navbar .nav-container .navbar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar .nav-container .navbar-links .nav-container-link {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5% 0%;
+  align-items: baseline;
+}
+.navbar .nav-container .navbar-links .nav-container-link i {
+  font-size: 1.3rem;
+  color: #828486;
+  margin: 1% 0% 0% -18%;
+}
+.navbar .nav-container .navbar-links .nav-container-link h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0% -17% 0% 0%;
+  color: #828486;
+}
+.navbar .nav-container .nav-container-social-media {
+  display: flex;
+  flex-direction: row;
+  margin-top: 57vh;
+  justify-content: space-around;
+  justify-self: flex-end;
+}
+.navbar .nav-container .nav-container-social-media a {
+  font-size: 1.25rem;
+  color: #828486;
+}
 .main-container {
   width: 70%;
   height: 100%;
@@ -146,96 +226,6 @@ a img {
   font-family: 'Source Sans Pro';
 }
 .body {
-  border: 1px solid black;
-}
-.body .navbar {
-  border: 1px solid black;
-  height: 100vh;
-  width: 19.5vw;
-  display: flex;
-  flex-direction: row;
-  background: #212528;
-}
-.body .navbar .nav-open-close {
-  border: 1px solid black;
-  width: 2vw;
-  margin: auto;
-}
-.body .navbar .nav-container {
-  border: 1px solid black;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-.body .navbar .nav-container .nav-container-person {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 7vh;
-  justify-content: space-between;
-  margin: 8% 5%;
-}
-.body .navbar .nav-container .nav-container-person .nav-container-person-img {
-  border: 1px solid black;
-  width: 40%;
-  height: 100%;
-}
-.body .navbar .nav-container .nav-container-person .nav-container-person-img img {
-  width: 80%;
-  height: 100%;
-}
-.body .navbar .nav-container .nav-container-person .nav-container-person-info {
-  border: 1px solid black;
-}
-.body .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
-  border: 1px solid black;
-  margin: 4% 0% 0% 24%;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-.body .navbar .nav-container .nav-container-person .nav-container-person-info p {
-  border: 1px solid black;
-  font-size: 0.9rem;
-  color: #828486;
-}
-.body .navbar .nav-container .navbar-links {
-  border: 1px solid black;
-  width: 100%;
-}
-.body .navbar .nav-container .navbar-links .nav-container-link {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 5% 0%;
-  align-items: baseline;
-}
-.body .navbar .nav-container .navbar-links .nav-container-link i {
-  border: 1px solid black;
-  font-size: 1.3rem;
-  color: #828486;
-  margin: 1% 0% 0% -18%;
-}
-.body .navbar .nav-container .navbar-links .nav-container-link h4 {
-  border: 1px solid black;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0% -17% 0% 0%;
-  color: #828486;
-}
-.body .navbar .nav-container .nav-container-social-media {
-  margin: 10%;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  margin: 0 0 100% 0;
-  justify-content: space-around;
-}
-.body .navbar .nav-container .nav-container-social-media a {
-  font-size: 1.25rem;
-  color: #828486;
   border: 1px solid black;
 }
 .body .main-container {
