@@ -19,7 +19,6 @@
 .navbar-i {
   font-size: 1.3rem;
   color: #828486;
-  margin: 1% 0% 0% -18%;
 }
 html,
 body {
@@ -143,6 +142,9 @@ a img {
   width: 20vw;
   display: flex;
   flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 0;
   background: #212528;
 }
 .navbar .nav-open-close {
@@ -156,6 +158,7 @@ a img {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-content: center;
 }
 .navbar .nav-container .nav-container-person {
   display: flex;
@@ -163,7 +166,7 @@ a img {
   align-items: center;
   height: 7vh;
   justify-content: space-between;
-  margin: 8% 5%;
+  margin: 8% 9%;
 }
 .navbar .nav-container .nav-container-person .nav-container-person-img {
   width: 40%;
@@ -197,11 +200,12 @@ a img {
   justify-content: space-between;
   padding: 5% 0%;
   align-items: baseline;
+  margin-right: 4.8rem;
+  margin-left: 1.4rem;
 }
 .navbar .nav-container .navbar-links .nav-container-link i {
   font-size: 1.3rem;
   color: #828486;
-  margin: 1% 0% 0% -18%;
 }
 .navbar .nav-container .navbar-links .nav-container-link h4 {
   font-size: 1.3rem;
@@ -226,9 +230,12 @@ a img {
   background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background: blue;
+  background: #7d7e7d;
+  /* Old browsers */
+  background: black;
   display: flex;
   flex-direction: column;
+  margin-left: 20vw;
 }
 .main-container .introduction {
   position: relative;
@@ -241,7 +248,6 @@ a img {
 }
 .main-container .introduction h2 {
   font-size: 3.1rem;
-  line-height: 5rem;
   color: #F4F3F1;
   text-align: center;
   z-index: 1;
@@ -271,10 +277,11 @@ a img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
 }
 .main-container .introduction .video-container video {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 .main-container .portfolio {
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
@@ -299,7 +306,8 @@ a img {
   text-align: center;
 }
 .main-container .portfolio .portfolio-description p {
-  font-size: 1.45rem;
+  font-size: 1.59rem;
+  font-weight: 300;
   display: block;
   line-height: 1.75;
   color: #828486;
@@ -320,11 +328,16 @@ a img {
   -webkit-box-shadow: 0px 3px 17px -1px #828486;
   -moz-box-shadow: 0px 3px 17px -1px #828486;
   box-shadow: 0px 3px 17px -1px #828486;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 .main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-description {
   margin: 0;
   text-align: center;
+}
+.main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-description p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 2% 0%;
 }
 .main-container .about-me {
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
@@ -358,7 +371,8 @@ a img {
   text-align: center;
 }
 .main-container .about-me .about-me-description p {
-  font-size: 1.45rem;
+  font-size: 1.59rem;
+  font-weight: 300;
   color: #828486;
 }
 .main-container .contact {
@@ -384,7 +398,8 @@ a img {
   text-align: center;
 }
 .main-container .contact .contact-description p {
-  font-size: 1.45rem;
+  font-size: 1.59rem;
+  font-weight: 300;
   color: #828486;
 }
 .main-container .contact .contact-user-information {

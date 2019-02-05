@@ -2,6 +2,9 @@
     height: 100vh;
     width: 20vw;
     .flex(row);
+    position: fixed;
+    left: 0;
+    top: 0;
     background: @navbar-bckgr;
 
     .nav-open-close {
@@ -15,13 +18,14 @@
         width: 100%;
         .flex(column);
         height: 100vh;
+        align-content: center;
 
         .nav-container-person {
             .flex(row);
             align-items: center;
             height: 7vh;
             justify-content: space-between;
-            margin: 8% 5%;
+            margin: 8% 9%;
 
 
             .nav-container-person-img {
@@ -62,6 +66,8 @@
                 justify-content: space-between;
                 padding: 5% 0%;
                 align-items: baseline;
+                margin-right: 4.8rem;
+                margin-left: 1.4rem;
 
                 i {
                     .navbar-i();
