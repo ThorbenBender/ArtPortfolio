@@ -1,6 +1,6 @@
 .navbar {
     height: 100vh;
-    width: 19.5vw;
+    width: 20vw;
     .flex(row);
     background: @navbar-bckgr;
 
@@ -8,6 +8,7 @@
         width: 2vw;
         margin: auto;
         color: white;
+        display: none;
     }
 
     .nav-container {
@@ -22,6 +23,7 @@
             justify-content: space-between;
             margin: 8% 5%;
 
+
             .nav-container-person-img {
                 width: 40%;
                 height: 100%;
@@ -35,14 +37,15 @@
             .nav-container-person-info {
 
                 h4 {
-                    margin: 4% 0% 0% 24%;
+                    text-align: right;
+                    line-height: 2rem;
                     color: white;
-                    font-size: 1.5rem;
-                    font-weight: 100;
+                    font-size: @first-font-size;
+                    font-weight: 600;
                 }
 
                 p {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     color: @navbar-col;
                 }
             }
@@ -61,17 +64,15 @@
                 align-items: baseline;
 
                 i {
-                    // font-size: 1.3rem;
-                    // color: @navbar-col;
-                    // margin: 1% 0% 0% -18%;
                     .navbar-i();
                 }
 
                 h4 {
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     font-weight: 500;
                     margin: 0% -17% 0% 0%;
                     color: @navbar-col;
+                    font-weight: 300;
                 }
             }
         }
