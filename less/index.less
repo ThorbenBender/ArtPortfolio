@@ -1,10 +1,10 @@
-@import "variable.less";
-@import "mixin.less";
-@import "reset.less";
-@import "page.less";
-@import "navbar.less";
-@import "footer.less";
-@import "main-content.less";
+@import 'variable.less';
+@import 'mixin.less';
+@import 'reset.less';
+@import 'page.less';
+@import 'navbar.less';
+@import 'footer.less';
+@import 'main-content.less';
 
 * {
     font-family: @default-font;
@@ -63,7 +63,7 @@
 
                     p {
                         border: 1px solid black;
-                        font-size: .9rem;
+                        font-size: 0.9rem;
                         color: @navbar-col;
                     }
                 }
@@ -99,7 +99,8 @@
             }
 
             .nav-container-social-media {
-                margin: 10% border: 1px solid black;
+                margin: 10%;
+                border: 1px solid black;
                 .flex(row);
                 margin: 0 0 100% 0;
                 justify-content: space-around;
@@ -259,8 +260,9 @@
         .contact {
             border: 1px solid black;
             .flex(column);
-            height: 100vh;
+            height: 120vh;
             align-items: center;
+            width: 100%;
 
             .contact-title {
                 margin: 8% 0% 4% 0%;
@@ -284,33 +286,67 @@
             }
 
             .contact-user-information {
-                border: 1px solid black;
-                width: 90%;
                 .flex(row);
                 justify-content: space-between;
+                width: 90%;
+                margin-bottom: 3%;
 
                 input {
-                    padding: 2% 35% 2% 2%;
-                    border-radius: 10px;
+                    width: 45%;
+                    border-radius: 0.35em;
+                    padding: 1.25rem 1rem 1.25rem 1rem;
+                    box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+                    border: solid 1px rgba(0, 0, 0, 0.15);
+                    font-size: 1.5rem;
+                    font-weight: 300;
                 }
             }
 
             .contact-message {
                 border: 1px solid black;
+                width: 90%;
+
+                input {
+                    width: 99.8%;
+                    padding: 0.5rem 0 15rem 0.5rem;
+                    border-radius: 0.35em;
+                    box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+                    border: solid 1px rgba(0, 0, 0, 0.15);
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
             }
 
             .contact-send {
+                margin-top: 2%;
                 border: 1px solid black;
+                width: 20%;
+                margin-bottom: 10%;
+
+                button {
+                    color: white;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    border-radius: 0.35rem;
+                    padding: 1.5rem 2rem 1.5rem 2rem;
+                    background-color: #8ebebc;
+                    border: 0;
+                    cursor: pointer;
+                }
             }
         }
 
         footer {
             border: 1px solid black;
+            .flex(row);
+            height: 15vh;
+            align-items: center;
+            justify-content: center;
 
             .footer-copyright {
                 border: 1px solid black;
             }
         }
     }
-
 }
