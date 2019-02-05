@@ -171,13 +171,33 @@ a img {
   justify-content: space-between;
   margin: 8% 9%;
 }
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem 1.75rem 5.75rem 1.75rem;
+    min-height: 48px;
+    margin-bottom: 8rem;
+  }
+}
 .navbar .nav-container .nav-container-person .nav-container-person-img {
   width: 40%;
   height: 100%;
 }
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-img {
+    margin-bottom: 1.5rem;
+  }
+}
 .navbar .nav-container .nav-container-person .nav-container-person-img img {
   width: 80%;
   height: 100%;
+}
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-img img {
+    width: 100%;
+  }
 }
 .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
   text-align: right;
@@ -186,9 +206,21 @@ a img {
   font-size: 1.59rem;
   font-weight: 600;
 }
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.32rem;
+  }
+}
 .navbar .nav-container .nav-container-person .nav-container-person-info p {
   font-size: 1rem;
   color: #828486;
+}
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-info p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 .navbar .nav-container .navbar-links {
   width: 100%;
@@ -206,9 +238,21 @@ a img {
   margin-right: 4.8rem;
   margin-left: 1.4rem;
 }
+@media (max-width: 1320px) {
+  .navbar .nav-container .navbar-links .nav-container-link {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
 .navbar .nav-container .navbar-links .nav-container-link i {
   font-size: 1.3rem;
   color: #828486;
+}
+@media (max-width: 1320px) {
+  .navbar .nav-container .navbar-links .nav-container-link i {
+    margin-left: 1rem;
+  }
 }
 .navbar .nav-container .navbar-links .nav-container-link h4 {
   font-size: 1.3rem;
@@ -217,12 +261,22 @@ a img {
   color: #828486;
   font-weight: 300;
 }
+@media (max-width: 1320px) {
+  .navbar .nav-container .navbar-links .nav-container-link h4 {
+    margin: 0;
+  }
+}
 .navbar .nav-container .nav-container-social-media {
   display: flex;
   flex-direction: row;
   margin-top: 57vh;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-self: flex-end;
+}
+@media (max-width: 1320px) {
+  .navbar .nav-container .nav-container-social-media {
+    margin-top: 60vh;
+  }
 }
 .navbar .nav-container .nav-container-social-media a {
   font-size: 1.25rem;
