@@ -219,16 +219,6 @@ a img {
   color: #828486;
 }
 .main-container {
-  width: 70%;
-  height: 100%;
-}
-* {
-  font-family: 'Source Sans Pro';
-}
-.body {
-  border: 1px solid black;
-}
-.body .main-container {
   border: 1px solid black;
   width: 80vw;
   background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
@@ -238,69 +228,81 @@ a img {
   display: flex;
   flex-direction: column;
 }
-.body .main-container .introduction {
+.main-container .introduction {
   border: 1px solid black;
+  position: relative;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.body .main-container .introduction h1 {
+.main-container .introduction h1 {
   margin: -10% 0% 2.5% 0%;
-  border: 1px solid black;
   font-size: 2rem;
   color: #F4F3F1;
   text-align: center;
+  z-index: 1;
 }
-.body .main-container .introduction p {
-  border: 1px solid black;
+.main-container .introduction p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.75;
+  z-index: 1;
   color: #F4F3F1;
   font-weight: 100;
 }
-.body .main-container .introduction a {
+.main-container .introduction a {
   margin: 5% 0% 0% 0%;
-  border: 1px solid black;
   padding: 1.5% 3.9%;
   border-radius: 10px;
   background: #82AFAD;
   color: #F4F3F1;
   text-decoration: none;
   font-size: 1.5rem;
+  z-index: 1;
 }
-.body .main-container .portfolio {
+.main-container .introduction .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vh;
+  height: 100vh;
+}
+.main-container .introduction .video-container video {
+  height: 100%;
+}
+.main-container .portfolio {
   border: 1px solid black;
   height: 170vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.body .main-container .portfolio .portfolio-title {
+.main-container .portfolio .portfolio-title {
   border: 1px solid black;
   margin: 8% 0% 4% 0%;
 }
-.body .main-container .portfolio .portfolio-title h2 {
+.main-container .portfolio .portfolio-title h2 {
   font-size: 3rem;
   font-weight: 100;
   color: #666666;
   font-weight: 300;
 }
-.body .main-container .portfolio .portfolio-description {
+.main-container .portfolio .portfolio-description {
   border: 1px solid black;
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
-.body .main-container .portfolio .portfolio-description p {
+.main-container .portfolio .portfolio-description p {
   font-size: 1.45rem;
   display: block;
   line-height: 1.75;
   color: #828486;
 }
-.body .main-container .portfolio .portfolio-box-section {
+.main-container .portfolio .portfolio-box-section {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -310,7 +312,7 @@ a img {
   height: 100%;
   width: 90%;
 }
-.body .main-container .portfolio .portfolio-box-section .portfolio-img-box {
+.main-container .portfolio .portfolio-box-section .portfolio-img-box {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -320,51 +322,51 @@ a img {
   box-shadow: 0px 3px 17px -1px #828486;
   padding-bottom: 1%;
 }
-.body .main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-img {
+.main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-img {
   border: 1px solid black;
 }
-.body .main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-description {
+.main-container .portfolio .portfolio-box-section .portfolio-img-box .portfolio-box-description {
   margin: 0;
   text-align: center;
 }
-.body .main-container .about-me {
+.main-container .about-me {
   border: 1px solid black;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.body .main-container .about-me .about-me-title {
+.main-container .about-me .about-me-title {
   border: 1px solid black;
   margin: 8% 0% 4% 0%;
 }
-.body .main-container .about-me .about-me-title h2 {
+.main-container .about-me .about-me-title h2 {
   font-size: 3rem;
   font-weight: 100;
   color: #666666;
   font-family: 'Source Sans Pro';
   font-weight: 300;
 }
-.body .main-container .about-me .about-me-photo {
+.main-container .about-me .about-me-photo {
   border: 1px solid black;
   width: 90%;
   height: 46%;
   margin-bottom: 4%;
 }
-.body .main-container .about-me .about-me-photo img {
+.main-container .about-me .about-me-photo img {
   width: 100%;
   height: 100%;
 }
-.body .main-container .about-me .about-me-description {
+.main-container .about-me .about-me-description {
   border: 1px solid black;
   width: 90%;
   text-align: center;
 }
-.body .main-container .about-me .about-me-description p {
+.main-container .about-me .about-me-description p {
   font-size: 1.45rem;
   color: #828486;
 }
-.body .main-container .contact {
+.main-container .contact {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -372,34 +374,34 @@ a img {
   align-items: center;
   width: 100%;
 }
-.body .main-container .contact .contact-title {
+.main-container .contact .contact-title {
   margin: 8% 0% 4% 0%;
   border: 1px solid black;
 }
-.body .main-container .contact .contact-title h2 {
+.main-container .contact .contact-title h2 {
   font-size: 3rem;
   font-weight: 100;
   color: #666666;
   font-weight: 300;
 }
-.body .main-container .contact .contact-description {
+.main-container .contact .contact-description {
   border: 1px solid black;
   width: 90%;
   text-align: center;
   margin-bottom: 5%;
 }
-.body .main-container .contact .contact-description p {
+.main-container .contact .contact-description p {
   font-size: 1.45rem;
   color: #828486;
 }
-.body .main-container .contact .contact-user-information {
+.main-container .contact .contact-user-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
   margin-bottom: 3%;
 }
-.body .main-container .contact .contact-user-information input {
+.main-container .contact .contact-user-information input {
   width: 45%;
   border-radius: 0.35em;
   padding: 1.25rem 1rem 1.25rem 1rem;
@@ -408,11 +410,11 @@ a img {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.body .main-container .contact .contact-message {
+.main-container .contact .contact-message {
   border: 1px solid black;
   width: 90%;
 }
-.body .main-container .contact .contact-message input {
+.main-container .contact .contact-message input {
   width: 99.8%;
   padding: 0.5rem 0 15rem 0.5rem;
   border-radius: 0.35em;
@@ -421,13 +423,13 @@ a img {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.body .main-container .contact .contact-send {
+.main-container .contact .contact-send {
   margin-top: 2%;
   border: 1px solid black;
   width: 20%;
   margin-bottom: 10%;
 }
-.body .main-container .contact .contact-send button {
+.main-container .contact .contact-send button {
   color: white;
   width: 100%;
   font-size: 1.5rem;
@@ -438,7 +440,13 @@ a img {
   border: 0;
   cursor: pointer;
 }
-.body .main-container footer {
+* {
+  font-family: 'Source Sans Pro';
+}
+.body {
+  border: 1px solid black;
+}
+.body footer {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -446,6 +454,6 @@ a img {
   align-items: center;
   justify-content: center;
 }
-.body .main-container footer .footer-copyright {
+.body footer .footer-copyright {
   border: 1px solid black;
 }
