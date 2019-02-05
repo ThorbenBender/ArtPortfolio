@@ -1,5 +1,4 @@
 .main-container {
-    border: 1px solid black;
     width: 80vw;
     background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
     background-repeat: no-repeat;
@@ -8,7 +7,6 @@
     .flex(column);
 
     .introduction {
-        border: 1px solid black;
         position: relative;
         height: 100vh;
         width: 100%;
@@ -58,13 +56,13 @@
     }
 
     .portfolio {
-        border: 1px solid black;
+        box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+        background: @portfolio-bckcol;
         height: 170vh;
         .flex(column);
         align-items: center;
 
         .portfolio-title {
-            border: 1px solid black;
             margin: 8% 0% 4% 0%;
 
             h2 {
@@ -73,7 +71,6 @@
         }
 
         .portfolio-description {
-            border: 1px solid black;
             width: 90%;
             margin: 0 auto;
             text-align: center;
@@ -87,7 +84,6 @@
         }
 
         .portfolio-box-section {
-            border: 1px solid black;
             .flex(row);
             flex-wrap: wrap;
             justify-content: space-around;
@@ -96,15 +92,11 @@
             width: 90%;
 
             .portfolio-img-box {
-                border: 1px solid black;
                 .flex(column);
                 height: 25%;
                 .box-shadow();
                 padding-bottom: 1%;
 
-                .portfolio-box-img {
-                    border: 1px solid black;
-                }
 
                 .portfolio-box-description {
                     margin: 0;
@@ -115,13 +107,13 @@
     }
 
     .about-me {
-        border: 1px solid black;
+        box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+        background: @portfolio-bckcol;
         height: 100vh;
         .flex(column);
         align-items: center;
 
         .about-me-title {
-            border: 1px solid black;
             margin: 8% 0% 4% 0%;
 
             h2 {
@@ -132,7 +124,6 @@
         }
 
         .about-me-photo {
-            border: 1px solid black;
             width: 90%;
             height: 46%;
             margin-bottom: 4%;
@@ -144,7 +135,6 @@
         }
 
         .about-me-description {
-            border: 1px solid black;
             width: 90%;
             text-align: center;
 
@@ -156,7 +146,6 @@
     }
 
     .contact {
-        border: 1px solid black;
         .flex(column);
         height: 120vh;
         align-items: center;
@@ -164,7 +153,6 @@
 
         .contact-title {
             margin: 8% 0% 4% 0%;
-            border: 1px solid black;
 
             h2 {
                 .section-header();
