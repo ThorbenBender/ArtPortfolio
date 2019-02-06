@@ -357,7 +357,6 @@ footer .footer-copyright {
 .main-container {
   width: 80vw;
   max-width: 1519px;
-  background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background: #7d7e7d;
@@ -372,6 +371,21 @@ footer .footer-copyright {
     margin: 0;
   }
 }
+.main-container .nav-open-close {
+  transition: transform 0.5s ease;
+  display: none;
+  height: 2.25em;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 3.25rem;
+  z-index: 2;
+}
+@media (max-width: 962px) {
+  .main-container .nav-open-close {
+    display: block;
+  }
+}
 .main-container .fa-bars {
   position: fixed;
   left: 20vw;
@@ -383,6 +397,17 @@ footer .footer-copyright {
   font-size: 2rem;
   color: white;
   display: none;
+  color: #fff;
+  font-size: 18px;
+  background: rgba(128, 136, 144, 0.5);
+  border-radius: 0.35em;
+  text-align: center;
+  left: 0.5em;
+  top: 0.5em;
+  display: block;
+  width: 3.25em;
+  height: 2.25em;
+  line-height: 2.25em;
 }
 @media (max-width: 1434px) {
   .main-container .fa-bars {
@@ -680,6 +705,11 @@ footer .footer-copyright {
   height: 46%;
   margin-bottom: 4%;
 }
+@media (max-width: 890px) {
+  .main-container .about-me .about-me-photo {
+    height: 22%;
+  }
+}
 .main-container .about-me .about-me-photo img {
   width: 100%;
   height: 100%;
@@ -773,6 +803,11 @@ footer .footer-copyright {
     margin-bottom: 2%;
   }
 }
+@media (max-width: 890px) {
+  .main-container .contact-user-information input {
+    width: 42.5%;
+  }
+}
 @media (max-width: 736px) {
   .main-container .contact-user-information input {
     width: 96%;
@@ -788,8 +823,8 @@ footer .footer-copyright {
   }
 }
 .main-container .contact-message input {
-  width: 99.8%;
-  padding: 0.5rem 0 15rem 0.5rem;
+  width: 96%;
+  padding: 0.5rem 1rem 15rem 1rem;
   border-radius: 0.35em;
   box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
   border: solid 1px rgba(0, 0, 0, 0.15);
@@ -816,8 +851,13 @@ footer .footer-copyright {
 }
 @media (max-width: 736px) {
   .main-container .contact-send {
-    width: 30%;
+    width: 35%;
     margin-bottom: 5%;
+  }
+}
+@media (max-width: 485px) {
+  .main-container .contact-send {
+    width: 45%;
   }
 }
 .main-container .contact-send button {
@@ -839,5 +879,11 @@ footer .footer-copyright {
 @media (max-width: 736px) {
   .main-container .contact-send button {
     font-size: 1.15rem;
+  }
+}
+@media (max-width: 485px) {
+  .main-container .contact-send button {
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
 }
