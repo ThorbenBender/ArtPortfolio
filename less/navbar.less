@@ -8,7 +8,8 @@
     background: @navbar-bckgr;
 
     @media @tablet-portrait {
-        width: 40vw;
+        width: 30vw;
+        display: none;
     }
 
     .nav-open-close {
@@ -39,6 +40,13 @@
                 margin-bottom: 8rem;
             }
 
+            @media @tablet-portrait {
+                .flex(row);
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2%;
+            }
+
 
             .nav-container-person-img {
                 width: 40%;
@@ -46,6 +54,11 @@
 
                 @media @tablet {
                     margin-bottom: 1.5rem;
+                }
+
+                @media @tablet-portrait {
+                    width: 30%;
+                    margin-top: 5%;
                 }
 
                 img {
@@ -81,6 +94,10 @@
                         font-size: 1rem;
                         font-weight: 300;
                     }
+
+                    @media @tablet-portrait {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }
@@ -90,8 +107,12 @@
             .flex(column);
             align-items: center;
 
+            @media @tablet-portrait {
+                width: 100%;
+            }
+
             .nav-container-link {
-                width: 70%;
+                width: 80%;
                 .flex(row);
                 justify-content: space-between;
                 padding: 5% 0%;
@@ -104,6 +125,14 @@
                     justify-content: flex-start;
                     margin: 0;
                     padding: 12% 0%;
+                    width: 80%;
+                }
+
+                @media @tablet-portrait {
+                    padding: 5% 0%;
+                    flex-direction: row;
+                    width: 80%;
+                    justify-content: space-between;
                 }
 
                 i {
@@ -136,6 +165,10 @@
 
             @media @tablet {
                 margin-top: 60vh;
+            }
+
+            @media @tablet-portrait {
+                margin-top: 57vh;
             }
 
             a {
