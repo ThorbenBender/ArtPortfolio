@@ -150,6 +150,11 @@ a img {
   top: 0;
   background: #212528;
 }
+@media (max-width: 962px) {
+  .navbar {
+    width: 40vw;
+  }
+}
 .navbar .nav-open-close {
   width: 2vw;
   margin: auto;
@@ -243,6 +248,7 @@ a img {
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin: 0;
+    padding: 12% 0%;
   }
 }
 .navbar .nav-container .navbar-links .nav-container-link i {
@@ -307,6 +313,12 @@ footer .footer-copyright {
   display: flex;
   flex-direction: column;
   margin-left: 20vw;
+}
+@media (max-width: 962px) {
+  .main-container {
+    width: 70vw;
+    margin-left: 40vw;
+  }
 }
 .main-container .introduction {
   position: relative;
