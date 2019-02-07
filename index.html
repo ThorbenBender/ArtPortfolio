@@ -2,21 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>Art Portfolio</title>
+    <title>Thorben Bender</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/index.css" rel="stylesheet" />
-    <title>Document</title>
+    <script src="components/navbar.js"></script>
 </head>
 
 <body>
     <div class="body">
         <nav class="navbar">
-            <div class="nav-open-close">
-                <i class="fas fa-grip-lines"></i>
-            </div>
             <div class="nav-container">
                 <div class="nav-container-person">
                     <div class="nav-container-person-img">
@@ -65,19 +62,22 @@
             </div>
         </nav>
         <div class="main-container">
+            <div class="nav-open-close">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="introduction">
                 <h2>
-                    Hi! I'm Prologue, a free responsive<br>
-                    site template designed by HTML5 UP.
+                    Hi! My name is Thorben Bender<br>
+                    I am a fullstack developer
                 </h2>
                 <p>
-                    Ligula scelerisque justo sem accumsan diam quis<br>
-                    vitae natoque dictum sollicitudin elementum.
+                    On this page, you can see some of the work i done
+                    and learn more about me.
                 </p>
-                <a href="">Magna Aliquam</a>
+                <a href="#about-me">About Me</a>
                 <div class="video-container">
                     <video autoplay muted loop id="myVideo">
-                        <source src="video/blurry-night.mp4" type="video/mp4">
+                        <source src="video/Flamez.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -86,70 +86,69 @@
                     <h2>Portfolio</h2>
                 </div>
                 <div class="portfolio-description">
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis egestas rhoncus
-                        ridiculus in quis risus amet curabitur tempor orci penatibus. Tellus erat mauris ipsum
-                        fermentum etiam vivamus eget. Nunc nibh morbi quis fusce hendrerit lacus ridiculus.</p>
+                    <p>These are some pictures, I took. If you want to see more of my work, go to the contact section.
+                        Or contact me on the social media sites.</p>
                 </div>
                 <div class="portfolio-box-section">
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/alex-knight-387110-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/simon-zhu-983240-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/journey-man-1348078-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/maria-teneva-1343355-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/anton-shuvalov-1349927-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/alex-knight-326705-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/fallout.jpg" alt="text" />
+                            <img src="img/clay-banks-170882-unsplash.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
-                            <p>Hello</p>
+                            <p>Learn More</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-me">
+            <div class="about-me" id="about-me">
                 <div class="about-me-title">
                     <h2>
                         About Me
@@ -160,11 +159,8 @@
                 </div>
                 <div class="about-me-description">
                     <p>
-                        Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus ultricies curae quis et
-                        rhoncus velit. Lobortis elementum aliquet nec vitae laoreet eget cubilia quam non etiam odio
-                        tincidunt montes. Elementum sem parturient nulla quam placerat viverra mauris non cum elit
-                        tempus ullamcorper dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-                        ornare iaculis.
+                        My name is Thorben Bender and i'am a fullstack web developer. I'am 20 years old and live in
+                        Germany right now. I would love to work abroad ,learn different languages and meet new people.
                     </p>
                 </div>
             </div>
@@ -176,9 +172,8 @@
                 </div>
                 <div class="contact-description">
                     <p>
-                        Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-                        dolor. Libero rutrum ut lacinia donec curae mus. Eleifend id porttitor ac ultricies lobortis
-                        sem nunc orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.
+                        This is section is for the people or who want to learn more about me or want to collaberate
+                        with me on their new project. I will try to reply as fast as possible.
                     </p>
                 </div>
                 <div class="contact-user-information">

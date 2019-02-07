@@ -1,6 +1,6 @@
 .main-container {
     width: 80vw;
-    background-image: url(img/zhu-hongzhi-1338337-unsplash.jpg);
+    max-width: 1519px;
     background-repeat: no-repeat;
     background-position: center;
     background: #7d7e7d;
@@ -8,9 +8,75 @@
     .flex(column);
     margin-left: 20vw;
 
+    // #header-visible {
+    //     transform: translateX(275px);
+    // }
     @media @tablet-portrait {
-        width: 70vw;
-        margin-left: 40vw;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .nav-open-close {
+        transition: transform 0.5s ease;
+        display: none;
+        height: 2.25em;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 3.25rem;
+        z-index: 2;
+
+        @media @tablet-portrait {
+            display: block;
+        }
+    }
+
+
+    .fa-bars {
+        position: fixed;
+        left: 20vw;
+        top: 0;
+        margin-top: 1%;
+        margin-left: 1%;
+        z-index: 1;
+        padding: 1%;
+        font-size: 2rem;
+        color: white;
+        display: none;
+        color: #fff;
+        font-size: 18px;
+        line-height: 2.25em;
+        background: rgba(128, 136, 144, 0.5);
+        border-radius: 0.35em;
+        text-align: center;
+        left: 0.5em;
+        top: 0.5em;
+        display: block;
+        width: 3.25em;
+        height: 2.25em;
+        line-height: 2.25em;
+
+        @media @tablet {
+            display: none;
+        }
+
+        @media @tablet-portrait {
+            display: block;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+
+        @media @phone {}
+    }
+
+    @media @tablet-portrait {
+        width: 100vw;
+        margin: 0;
+        // transform: translateX(275px);
     }
 
     .introduction {
@@ -20,6 +86,14 @@
         .flex(column);
         align-items: center;
         justify-content: center;
+
+        @media @tablet-portrait {
+            height: 55vh;
+        }
+
+        @media @phone {
+            height: 100vh;
+        }
 
         h2 {
             font-size: 3.1rem;
@@ -31,6 +105,14 @@
 
             @media @tablet {
                 .tablet-title();
+            }
+
+            @media @tablet-portrait {
+                width: 80%;
+            }
+
+            @media @phone {
+                width: 60%;
             }
         }
 
@@ -44,6 +126,11 @@
 
             @media @tablet {
                 .tablet-description();
+            }
+
+            @media @phone {
+                width: 60%;
+                margin-bottom: 2%;
             }
         }
 
@@ -61,6 +148,10 @@
             @media @tablet {
                 font-size: 1.35rem;
             }
+
+            @media @tablet-portrait {
+                padding: 2% 3.9%;
+            }
         }
 
         .video-container {
@@ -69,8 +160,9 @@
             left: 0;
             height: 100%;
 
+
             video {
-                height: 100vh;
+                height: 100%;
                 object-fit: fill;
                 width: 100%;
             }
@@ -80,20 +172,20 @@
     .portfolio {
         box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
         background: @portfolio-bckcol;
-        height: 170vh;
         .flex(column);
         width: 100%;
         align-items: center;
-
-        @media @tablet {
-            height: 120vh;
-        }
 
         .portfolio-title {
             margin: 8% 0% 4% 0%;
 
             @media @tablet {
                 margin: 2% 0% 2% 0%;
+            }
+
+            @media @tablet-portrait {
+                margin-top: 8%;
+                margin-bottom: 6%;
             }
         }
 
@@ -110,6 +202,10 @@
         width: 90%;
         margin: 0 auto;
         text-align: center;
+
+        @media @tablet-portrait {
+            margin-bottom: 2%;
+        }
 
         p {
             font-size: @first-font-size;
@@ -136,19 +232,43 @@
             height: 78%;
         }
 
+        @media @tablet-portrait {
+            height: 65%;
+        }
+
+        @media @phone {
+            height: 100%;
+            width: 90%;
+        }
+
         .portfolio-img-box {
             .flex(column);
-            height: 25%;
+            height: 27%;
             .box-shadow();
-            padding-bottom: 3%;
+            width: 30%;
+            margin-bottom: 3%;
 
             @media @tablet {
                 width: 30%;
                 height: 27%;
             }
 
+            @media @tablet-portrait {
+                max-height: 28%;
+            }
+
+            @media @phone {
+                height: 12%;
+                width: 100%;
+            }
+
             .porfolio-box-img {
                 width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
 
                 @media @tablet {
                     width: 100%;
@@ -172,6 +292,10 @@
                     @media @tablet {
                         .tablet-description();
                     }
+
+                    @media @phone {
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -182,7 +306,16 @@
         background: @portfolio-bckcol;
         height: 100vh;
         .flex(column);
+        width: 100%;
         align-items: center;
+
+        @media @tablet {
+            height: 80vh;
+        }
+
+        @media @tablet-portrait {
+            height: 80vh;
+        }
 
         .about-me-title {
             margin: 8% 0% 4% 0%;
@@ -202,6 +335,10 @@
             width: 90%;
             height: 46%;
             margin-bottom: 4%;
+
+            @media @tablet-portrait-small {
+                height: 22%;
+            }
 
             img {
                 width: 100%;
@@ -227,98 +364,150 @@
 
     .contact {
         .flex(column);
-        height: 90vh;
+        // height: 100vh;
         align-items: center;
         width: 100%;
         background: @contact-bck;
         .flex(column);
         justify-content: center;
         box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    }
 
-        @media @tablet {
-            height: 80vh;
-        }
 
-        .contact-title {
-            margin-bottom: 2%;
+    .contact-title {
+        margin-bottom: 2%;
 
-            h2 {
-                .section-header();
-
-                @media @tablet {
-                    .tablet-title();
-                }
-            }
-        }
-
-        .contact-description {
-            width: 90%;
-            text-align: center;
-            margin-bottom: 2%;
-
-            p {
-                font-size: @first-font-size;
-                font-weight: 300;
-                color: @navbar-col;
-
-                @media @tablet {
-                    .tablet-description();
-                }
-            }
-        }
-
-        .contact-user-information {
-            .flex(row);
-            justify-content: space-between;
-            width: 90%;
-            margin-bottom: 3%;
-
-            input {
-                width: 45%;
-                border-radius: 0.35em;
-                padding: 1.25rem 1rem 1.25rem 1rem;
-                box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-                border: solid 1px rgba(0, 0, 0, 0.15);
-                font-size: 1.5rem;
-                font-weight: 300;
-                background: @input-bck;
-            }
-        }
-
-        .contact-message {
-            width: 90%;
+        h2 {
+            .section-header();
 
             @media @tablet {
-                margin: 2%;
-            }
-
-            input {
-                width: 99.8%;
-                padding: 0.5rem 0 15rem 0.5rem;
-                border-radius: 0.35em;
-                box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-                border: solid 1px rgba(0, 0, 0, 0.15);
-                font-size: 1.5rem;
-                font-weight: 300;
-                background: @input-bck;
+                .tablet-title();
             }
         }
+    }
 
-        .contact-send {
-            margin-top: 2%;
-            width: 20%;
-            margin-bottom: 10%;
+    .contact-description {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2%;
 
-            button {
-                color: white;
-                width: 100%;
-                font-size: 1.5rem;
-                font-weight: 300;
-                border-radius: 0.35rem;
-                padding: 1.5rem 2rem 1.5rem 2rem;
-                background-color: @sendmessage-btn;
-                border: 0;
-                cursor: pointer;
+        p {
+            font-size: @first-font-size;
+            font-weight: 300;
+            color: @navbar-col;
+
+            @media @tablet {
+                .tablet-description();
+            }
+        }
+    }
+
+    .contact-user-information {
+        .flex(row);
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 2%;
+
+        @media @tablet-portrait {
+            margin: 0;
+        }
+
+        @media @phone {
+            .flex(column);
+            width: 90%;
+        }
+
+        input {
+            width: 45%;
+            border-radius: 0.35em;
+            padding: 1.25rem 1rem 1.25rem 1rem;
+            box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+            border: solid 1px rgba(0, 0, 0, 0.15);
+            font-size: 1.5rem;
+            font-weight: 300;
+            background: @input-bck;
+
+            @media @tablet-portrait {
+                margin-bottom: 2%;
+            }
+
+            @media @tablet-portrait-small {
+                width: 42.5%;
+            }
+
+            @media @phone {
+                width: 96%;
+                margin: 0% auto 4% auto;
+            }
+
+        }
+    }
+
+    .contact-message {
+        width: 90%;
+
+        @media @tablet {
+            margin-bottom: 2%;
+        }
+
+        input {
+            width: 96%;
+            padding: 0.5rem 1rem 15rem 1rem;
+            border-radius: 0.35em;
+            box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+            border: solid 1px rgba(0, 0, 0, 0.15);
+            font-size: 1.5rem;
+            font-weight: 300;
+            background: @input-bck;
+        }
+    }
+
+    .contact-send {
+        margin-top: 2%;
+        width: 20%;
+        margin-bottom: 10%;
+
+        @media @tablet {
+            width: 30%;
+            margin-bottom: 5%;
+        }
+
+        @media @tablet-portrait {
+            width: 30%;
+            margin-bottom: 5%;
+        }
+
+        @media @phone {
+            width: 35%;
+            margin-bottom: 5%;
+        }
+
+        @media @phone-small {
+            width: 45%;
+        }
+
+        button {
+            color: white;
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            border-radius: 0.35rem;
+            padding: 1.5rem 2rem 1.5rem 2rem;
+            background-color: @sendmessage-btn;
+            border: 0;
+            cursor: pointer;
+
+            @media @tablet-portrait {
+                font-size: 1.3rem;
+            }
+
+            @media @phone {
+                font-size: 1.15rem;
+            }
+
+            @media @phone-small {
+                font-size: .9rem;
+                padding: 1rem 1.5rem 1rem 1.5rem;
             }
         }
     }

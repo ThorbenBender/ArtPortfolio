@@ -6,15 +6,12 @@
     left: 0;
     top: 0;
     background: @navbar-bckgr;
+    z-index: 1;
+    display: flex;
 
     @media @tablet-portrait {
         width: 40vw;
-    }
-
-    .nav-open-close {
-        width: 2vw;
-        margin: auto;
-        color: white;
+        height: 100%;
         display: none;
     }
 
@@ -39,6 +36,13 @@
                 margin-bottom: 8rem;
             }
 
+            @media @tablet-portrait {
+                .flex(row);
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2%;
+            }
+
 
             .nav-container-person-img {
                 width: 40%;
@@ -46,6 +50,11 @@
 
                 @media @tablet {
                     margin-bottom: 1.5rem;
+                }
+
+                @media @tablet-portrait {
+                    width: 30%;
+                    margin-top: 5%;
                 }
 
                 img {
@@ -81,6 +90,10 @@
                         font-size: 1rem;
                         font-weight: 300;
                     }
+
+                    @media @tablet-portrait {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }
@@ -90,20 +103,39 @@
             .flex(column);
             align-items: center;
 
+            @media @tablet-portrait {
+                width: 100%;
+            }
+
             .nav-container-link {
                 width: 70%;
-                .flex(row);
+                display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 padding: 5% 0%;
                 align-items: baseline;
-                margin-right: 4.8rem;
-                margin-left: 1.4rem;
+                margin-right: 6.8rem;
+                margin-left: 3.4rem;
+
+                &.active {
+                    background: rgba(0, 0, 0, 0.15);
+                    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+                    color: #fff;
+                }
 
                 @media @tablet {
                     flex-direction: row-reverse;
                     justify-content: flex-start;
                     margin: 0;
                     padding: 12% 0%;
+                    width: 80%;
+                }
+
+                @media @tablet-portrait {
+                    padding: 5% 0%;
+                    flex-direction: row;
+                    width: 80%;
+                    justify-content: space-between;
                 }
 
                 i {
@@ -133,9 +165,17 @@
             margin-top: 57vh;
             justify-content: space-evenly;
             justify-self: flex-end;
+            border-top: solid 1px rgba(255, 255, 255, 0.05);
+            box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
 
             @media @tablet {
                 margin-top: 60vh;
+            }
+
+            @media @tablet-portrait {
+                margin: 0;
+                margin-top: 15%;
+                padding-top: 10%;
             }
 
             a {
@@ -143,5 +183,11 @@
                 color: @navbar-col;
             }
         }
+    }
+}
+
+.nav-show {
+    @media @tablet-portrait {
+        display: flex;
     }
 }
