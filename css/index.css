@@ -148,7 +148,7 @@ a img {
   left: 0;
   top: 0;
   background: #212528;
-  z-index: 1002;
+  z-index: 1;
   display: flex;
   overflow-y: auto;
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
@@ -314,7 +314,7 @@ a img {
 .navbar .nav-container .nav-container-social-media {
   display: flex;
   flex-direction: row;
-  margin-top: 57vh;
+  margin-top: 47vh;
   justify-content: space-evenly;
   justify-self: flex-end;
   border-top: solid 1px rgba(255, 255, 255, 0.05);
@@ -322,7 +322,7 @@ a img {
 }
 @media (max-width: 1434px) {
   .navbar .nav-container .nav-container-social-media {
-    margin-top: 60vh;
+    margin-top: 27vh;
   }
 }
 @media (max-width: 962px) {
@@ -426,8 +426,8 @@ footer .footer-copyright {
     top: 0;
     margin: 0;
     padding: 0;
-    margin-left: 1%;
-    margin-top: 1%;
+    margin-left: 2%;
+    margin-top: 2%;
   }
 }
 @media (max-width: 962px) {
@@ -538,6 +538,11 @@ footer .footer-copyright {
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+@media (max-width: 736px) {
+  .main-container .portfolio {
+    padding-bottom: 5%;
+  }
 }
 .main-container .portfolio .portfolio-title {
   margin: 8% 0% 4% 0%;
@@ -842,7 +847,7 @@ footer .footer-copyright {
 .main-container .contact-user-information input {
   width: 45%;
   border-radius: 0.35em;
-  padding: 1.25rem 1rem 1.25rem 1rem;
+  padding: 1.25rem 0rem 1.25rem 1rem;
   box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
   border: solid 1px rgba(0, 0, 0, 0.15);
   font-size: 1.5rem;
@@ -874,14 +879,19 @@ footer .footer-copyright {
   }
 }
 .main-container .contact-message input {
-  width: 96%;
-  padding: 0.5rem 1rem 15rem 1rem;
+  width: 100%;
+  padding: 1rem 0rem 10rem 1rem;
   border-radius: 0.35em;
   box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
   border: solid 1px rgba(0, 0, 0, 0.15);
   font-size: 1.5rem;
   font-weight: 300;
   background: #F8F9F9;
+}
+@media (max-width: 1434px) {
+  .main-container .contact-message input {
+    width: 96%;
+  }
 }
 .main-container .contact-send {
   margin-top: 2%;

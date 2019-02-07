@@ -64,11 +64,9 @@
             top: 0;
             margin: 0;
             padding: 0;
-            margin-left: 1%;
-            margin-top: 1%;
+            margin-left: 2%;
+            margin-top: 2%;
         }
-
-        @media @phone {}
     }
 
     @media @tablet-portrait {
@@ -173,6 +171,10 @@
         .flex(column);
         width: 100%;
         align-items: center;
+
+        @media @phone{
+            padding-bottom: 5%;
+        }
 
         .portfolio-title {
             margin: 8% 0% 4% 0%;
@@ -460,7 +462,7 @@
         input {
             width: 45%;
             border-radius: 0.35em;
-            padding: 1.25rem 1rem 1.25rem 1rem;
+            padding: 1.25rem 0rem 1.25rem 1rem;
             box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
             border: solid 1px rgba(0, 0, 0, 0.15);
             font-size: 1.5rem;
@@ -491,14 +493,17 @@
         }
 
         input {
-            width: 96%;
-            padding: 0.5rem 1rem 15rem 1rem;
+            width: 100%;
+            padding: 1rem 0rem 10rem 1rem;
             border-radius: 0.35em;
             box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
             border: solid 1px rgba(0, 0, 0, 0.15);
             font-size: 1.5rem;
             font-weight: 300;
             background: @input-bck;
+            @media @tablet{
+                width: 96%;
+            }
         }
     }
 
