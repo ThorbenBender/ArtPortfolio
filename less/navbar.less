@@ -15,13 +15,6 @@
         display: none;
     }
 
-    .nav-open-close {
-        width: 2vw;
-        margin: auto;
-        color: white;
-        display: none;
-    }
-
     .nav-container {
         width: 100%;
         .flex(column);
@@ -190,5 +183,11 @@
                 color: @navbar-col;
             }
         }
+    }
+}
+
+.nav-show {
+    @media @tablet-portrait {
+        display: flex;
     }
 }

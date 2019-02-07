@@ -158,12 +158,6 @@ a img {
     display: none;
   }
 }
-.navbar .nav-open-close {
-  width: 2vw;
-  margin: auto;
-  color: white;
-  display: none;
-}
 .navbar .nav-container {
   width: 100%;
   display: flex;
@@ -338,6 +332,11 @@ a img {
 .navbar .nav-container .nav-container-social-media a {
   font-size: 1.25rem;
   color: #828486;
+}
+@media (max-width: 962px) {
+  .nav-show {
+    display: flex;
+  }
 }
 footer {
   display: flex;
@@ -679,9 +678,14 @@ footer .footer-copyright {
   width: 100%;
   align-items: center;
 }
+@media (max-width: 1434px) {
+  .main-container .about-me {
+    height: 80vh;
+  }
+}
 @media (max-width: 962px) {
   .main-container .about-me {
-    height: 120vh;
+    height: 80vh;
   }
 }
 .main-container .about-me .about-me-title {
