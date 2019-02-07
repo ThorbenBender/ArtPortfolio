@@ -226,6 +226,47 @@
         height: 90%;
         width: 90%;
 
+        @media @phone {
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .swipe-left,
+        .swipe-right {
+            @media @phone {
+                position: absolute;
+                background: grey;
+                padding: 1% 2%;
+                border-radius: 100%;
+            }
+        }
+
+        .swipe-left {
+            display: none;
+
+            @media @phone {
+                top: 43%;
+                left: 5%;
+                display: block;
+                transform: translate(0, -50%);
+                color: white;
+            }
+        }
+
+        .swipe-right {
+            display: none;
+
+            @media @phone {
+                top: 43%;
+                left: 90%;
+                display: block;
+                transform: translate(0, -50%);
+                color: white;
+            }
+        }
+
+
         @media @tablet {
             height: 78%;
         }
@@ -258,6 +299,7 @@
             @media @phone {
                 height: 12%;
                 width: 100%;
+                display: none;
             }
 
             .porfolio-box-img {
@@ -512,6 +554,5 @@
 }
 
 .header-visible {
-    transform: translateX(275px);
-    color: green !important;
+    transform: translateX(40vw);
 }

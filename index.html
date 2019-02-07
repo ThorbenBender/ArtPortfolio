@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <link href="css/index.css" rel="stylesheet" />
+    <script src="./components/img-carousel.js" async></script>
+    <script src="./components/navbar.js" async></script>
 </head>
 
 <body>
@@ -90,7 +92,10 @@
                         Or contact me on the social media sites.</p>
                 </div>
                 <div class="portfolio-box-section">
-                    <div class="portfolio-img-box">
+                    <div class="swipe-left">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="portfolio-img-box portfolio-img-box-selected">
                         <div class="porfolio-box-img">
                             <img src="img/alex-knight-387110-unsplash.jpg" alt="text" />
                         </div>
@@ -146,6 +151,9 @@
                             <p>Learn More</p>
                         </div>
                     </div>
+                    <div class="swipe-right">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
             <div class="about-me" id="about-me">
@@ -197,7 +205,6 @@
         </div>
     </div>
     </div>
-    <script src="components/navbar.js"></script>
 </body>
 
 </html>

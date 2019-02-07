@@ -15,7 +15,7 @@
     @media @tablet-portrait {
         width: 40vw;
         height: 100%;
-        display: none;
+        left: -40vw;
     }
 
     .nav-container {
@@ -191,8 +191,8 @@
 
 .nav-show {
     @media @tablet-portrait {
-        display: block;
         transform: translateX(0);
-        width: 40vw;
+        transition: transform 0.5s ease;
+        left: 0;
     }
 }

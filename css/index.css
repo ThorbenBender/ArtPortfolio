@@ -158,7 +158,7 @@ a img {
   .navbar {
     width: 40vw;
     height: 100%;
-    display: none;
+    left: -40vw;
   }
 }
 .navbar .nav-container {
@@ -338,9 +338,9 @@ a img {
 }
 @media (max-width: 962px) {
   .nav-show {
-    display: block;
     transform: translateX(0);
-    width: 40vw;
+    transition: transform 0.5s ease;
+    left: 0;
   }
 }
 footer {
@@ -597,6 +597,46 @@ footer .footer-copyright {
   height: 90%;
   width: 90%;
 }
+@media (max-width: 736px) {
+  .main-container .portfolio-box-section {
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 736px) {
+  .main-container .portfolio-box-section .swipe-left,
+  .main-container .portfolio-box-section .swipe-right {
+    position: absolute;
+    background: grey;
+    padding: 1% 2%;
+    border-radius: 100%;
+  }
+}
+.main-container .portfolio-box-section .swipe-left {
+  display: none;
+}
+@media (max-width: 736px) {
+  .main-container .portfolio-box-section .swipe-left {
+    top: 43%;
+    left: 5%;
+    display: block;
+    transform: translate(0, -50%);
+    color: white;
+  }
+}
+.main-container .portfolio-box-section .swipe-right {
+  display: none;
+}
+@media (max-width: 736px) {
+  .main-container .portfolio-box-section .swipe-right {
+    top: 43%;
+    left: 90%;
+    display: block;
+    transform: translate(0, -50%);
+    color: white;
+  }
+}
 @media (max-width: 1434px) {
   .main-container .portfolio-box-section {
     height: 78%;
@@ -638,6 +678,7 @@ footer .footer-copyright {
   .main-container .portfolio-box-section .portfolio-img-box {
     height: 12%;
     width: 100%;
+    display: none;
   }
 }
 .main-container .portfolio-box-section .portfolio-img-box .porfolio-box-img {
@@ -898,6 +939,5 @@ footer .footer-copyright {
   }
 }
 .header-visible {
-  transform: translateX(275px);
-  color: green !important;
+  transform: translateX(40vw);
 }

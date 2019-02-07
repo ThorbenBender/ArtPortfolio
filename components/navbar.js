@@ -1,16 +1,15 @@
 class Navbar {
-    constructor(element) {
-        this.element = element;
+    constructor(nav) {
+        this.element = nav;
         this.button = document.querySelector('.nav-open-close');
         this.button.addEventListener('click', () => this.showNav());
         this.menu = document.querySelector('.main-container');
-        console.log(this.menu.classList);
     }
     showNav() {
-        setTimeout(() => this.element.classList.toggle('nav-show'), 500);
-        setTimeout(() => this.menu.classList.toggle('header-visible'), 500);
+        this.element.classList.toggle('nav-show');
+        this.menu.classList.toggle('header-visible');
 
-        console.log(this.menu.classList);
+
     }
 }
 
