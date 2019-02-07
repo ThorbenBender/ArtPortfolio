@@ -16,6 +16,18 @@
   font-weight: 400;
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Patrick Hand SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v6/0nkwC9f7MfsBiWcLtY65AWDK873ljiK-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Just Another Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Just Another Hand Regular'), local('JustAnotherHand-Regular'), url(https://fonts.gstatic.com/s/justanotherhand/v10/845CNN4-AJyIGvIou-6yJKyptyOpOfr4DG0.ttf) format('truetype');
+}
 .navbar-i {
   font-size: 1.3rem;
   color: #828486;
@@ -706,9 +718,10 @@ footer .footer-copyright {
   text-align: center;
 }
 .main-container .portfolio-box-section .portfolio-img-box .portfolio-box-description p {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 300;
   padding: 2% 0%;
+  font-family: 'Just Another Hand';
 }
 @media (max-width: 1434px) {
   .main-container .portfolio-box-section .portfolio-img-box .portfolio-box-description p {
