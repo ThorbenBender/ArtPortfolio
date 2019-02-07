@@ -6,8 +6,11 @@
     left: 0;
     top: 0;
     background: @navbar-bckgr;
-    z-index: 1;
+    z-index: 1002;
     display: flex;
+    overflow-y: auto;
+    box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    transition: transform 0.5s ease;
 
     @media @tablet-portrait {
         width: 40vw;
@@ -188,6 +191,8 @@
 
 .nav-show {
     @media @tablet-portrait {
-        display: flex;
+        display: block;
+        transform: translateX(0);
+        width: 40vw;
     }
 }

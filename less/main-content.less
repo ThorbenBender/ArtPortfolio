@@ -7,12 +7,10 @@
     /* Old browsers */
     .flex(column);
     margin-left: 20vw;
+    transition: transform 0.5s ease;
 
-    // #header-visible {
-    //     transform: translateX(275px);
-    // }
     @media @tablet-portrait {
-        width: 100vw;
+        width: 100%;
         margin: 0;
     }
 
@@ -511,4 +509,9 @@
             }
         }
     }
+}
+
+.header-visible {
+    transform: translateX(275px);
+    color: green !important;
 }

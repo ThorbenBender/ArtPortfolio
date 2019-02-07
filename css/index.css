@@ -148,8 +148,11 @@ a img {
   left: 0;
   top: 0;
   background: #212528;
-  z-index: 1;
+  z-index: 1002;
   display: flex;
+  overflow-y: auto;
+  box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+  transition: transform 0.5s ease;
 }
 @media (max-width: 962px) {
   .navbar {
@@ -335,7 +338,9 @@ a img {
 }
 @media (max-width: 962px) {
   .nav-show {
-    display: flex;
+    display: block;
+    transform: translateX(0);
+    width: 40vw;
   }
 }
 footer {
@@ -363,10 +368,11 @@ footer .footer-copyright {
   display: flex;
   flex-direction: column;
   margin-left: 20vw;
+  transition: transform 0.5s ease;
 }
 @media (max-width: 962px) {
   .main-container {
-    width: 100vw;
+    width: 100%;
     margin: 0;
   }
 }
@@ -890,4 +896,8 @@ footer .footer-copyright {
     font-size: 0.9rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
   }
+}
+.header-visible {
+  transform: translateX(275px);
+  color: green !important;
 }

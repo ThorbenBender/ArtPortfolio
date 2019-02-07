@@ -1,8 +1,17 @@
-let navbarOpenClose = document.querySelector('.nav-open-close');
+class Navbar {
+    constructor(element) {
+        this.element = element;
+        this.button = document.querySelector('.nav-open-close');
+        this.button.addEventListener('click', () => this.showNav());
+        this.menu = document.querySelector('.main-container');
+        console.log(this.menu.classList);
+    }
+    showNav() {
+        setTimeout(() => this.element.classList.toggle('nav-show'), 500);
+        setTimeout(() => this.menu.classList.toggle('header-visible'), 500);
 
-let navbar = document.querySelectorAll('.navbar');
+        console.log(this.menu.classList);
+    }
+}
 
-
-navbarOpenClose.addEventListener('click', () => {
-    navbar.classList.toggle('nav-show');
-})
+let navbars = document.querySelectorAll('.navbar').forEach(nav => new Navbar(nav));
