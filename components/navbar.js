@@ -4,7 +4,7 @@ class Navbar {
         this.button = document.querySelector('.nav-open-close');
         this.menu = document.querySelector('.main-container');
         this.button.addEventListener('click', () => this.closeOrOpen());
-        this.menu.addEventListener('mouseout', () => this.hideNav());
+        this.menu.addEventListener('click', () => this.hideNav());
     }
     closeOrOpen(){
         if (this.element.classList.contains('nav-show')){
