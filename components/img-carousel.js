@@ -9,8 +9,6 @@ class Carousel {
 
         this.imgBox[0].style.display = 'block';
 
-        console.log('hello');
-
         this.imgIndex = 0;
 
         this.leftButton.addEventListener('click', () => this.decrease());
