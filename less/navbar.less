@@ -103,6 +103,10 @@
                     @media @phone {
                         font-size: 1rem;
                     }
+
+                    @media @phone-small {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 p {
@@ -116,6 +120,10 @@
 
                     @media @tablet-portrait {
                         font-size: 0.75rem;
+                    }
+
+                    @media @phone-small {
+                        font-size: .6rem;
                     }
                 }
             }
@@ -161,11 +169,19 @@
                     justify-content: space-between;
                 }
 
+                @media @phone-small {
+                    width: 90%;
+                }
+
                 i {
                     .navbar-i();
 
                     @media @tablet {
                         margin-left: 1rem;
+                    }
+
+                    @media @phone-small {
+                        font-size: 1rem;
                     }
                 }
 
@@ -178,6 +194,10 @@
 
                     @media @tablet {
                         margin: 0;
+                    }
+
+                    @media @phone-small {
+                        font-size: 1rem;
                     }
                 }
             }
@@ -204,7 +224,12 @@
             a {
                 font-size: 1.25rem;
                 color: @navbar-col;
+
+                @media @phone-small {
+                    font-size: 1rem;
+                }
             }
+
         }
     }
 }

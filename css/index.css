@@ -271,6 +271,11 @@ a img {
     font-size: 1rem;
   }
 }
+@media (max-width: 485px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-info h4 {
+    font-size: 0.8rem;
+  }
+}
 .navbar .nav-container .nav-container-person .nav-container-person-info p {
   font-size: 1rem;
   color: #828486;
@@ -284,6 +289,11 @@ a img {
 @media (max-width: 962px) {
   .navbar .nav-container .nav-container-person .nav-container-person-info p {
     font-size: 0.75rem;
+  }
+}
+@media (max-width: 485px) {
+  .navbar .nav-container .nav-container-person .nav-container-person-info p {
+    font-size: 0.6rem;
   }
 }
 .navbar .nav-container .navbar-links {
@@ -329,6 +339,11 @@ a img {
     justify-content: space-between;
   }
 }
+@media (max-width: 485px) {
+  .navbar .nav-container .navbar-links .nav-container-link {
+    width: 90%;
+  }
+}
 .navbar .nav-container .navbar-links .nav-container-link i {
   font-size: 1.3rem;
   color: #828486;
@@ -336,6 +351,11 @@ a img {
 @media (max-width: 1434px) {
   .navbar .nav-container .navbar-links .nav-container-link i {
     margin-left: 1rem;
+  }
+}
+@media (max-width: 485px) {
+  .navbar .nav-container .navbar-links .nav-container-link i {
+    font-size: 1rem;
   }
 }
 .navbar .nav-container .navbar-links .nav-container-link h4 {
@@ -348,6 +368,11 @@ a img {
 @media (max-width: 1434px) {
   .navbar .nav-container .navbar-links .nav-container-link h4 {
     margin: 0;
+  }
+}
+@media (max-width: 485px) {
+  .navbar .nav-container .navbar-links .nav-container-link h4 {
+    font-size: 1rem;
   }
 }
 .navbar .nav-container .nav-container-social-media {
@@ -373,6 +398,11 @@ a img {
 .navbar .nav-container .nav-container-social-media a {
   font-size: 1.25rem;
   color: #828486;
+}
+@media (max-width: 485px) {
+  .navbar .nav-container .nav-container-social-media a {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 962px) {
   .nav-show {
