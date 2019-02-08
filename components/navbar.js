@@ -1,8 +1,28 @@
-let navbarOpenClose = document.querySelector('.nav-open-close');
+class Navbar {
+    constructor(nav) {
+        this.element = nav;
+        this.button = document.querySelector('.nav-open-close');
+        this.menu = document.querySelector('.main-container');
+        this.button.addEventListener('click', () => this.closeOrOpen());
+        this.menu.addEventListener('click', () => this.hideNav());
+    }
+    closeOrOpen(){
+        if (this.element.classList.contains('nav-show')){
+            this.hideNav();
+        }
+        else{
+            this.showNav();
+        }
+    }
+    showNav() {
+        this.element.classList.add('nav-show');
+        this.menu.classList.add('header-visible');
+        event.stopImmediatePropagation();
+    }
+    hideNav(){
+        this.element.classList.remove('nav-show');
+        this.menu.classList.remove('header-visible');
+    }
+}
 
-let navbar = document.querySelectorAll('.navbar');
-
-
-navbarOpenClose.addEventListener('click', () => {
-    navbar.classList.toggle('nav-show');
-})
+let navbars = document.querySelectorAll('.navbar').forEach(nav => new Navbar(nav));

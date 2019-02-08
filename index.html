@@ -7,21 +7,25 @@
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <link href="css/index.css" rel="stylesheet" />
-    <script src="components/navbar.js"></script>
+    <script src="./components/img-carousel.js" async></script>
+    <script src="./components/navbar.js" async></script>
 </head>
 
 <body>
+    <!-- body container start -->
     <div class="body">
+        <!-- start of navbar  -->
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-container-person">
                     <div class="nav-container-person-img">
-                        <img src="img/christopher-campbell-28567-unsplash.jpg" />
+                        <img src="img/christopher-campbell-28567-unsplash-min-min.jpg" />
                     </div>
                     <div class="nav-container-person-info">
-                        <h4>Jane Doe</h4>
-                        <p>Hyperspace Engineer</p>
+                        <h4>Thorben Bender</h4>
+                        <p>Fullstack Developer</p>
                     </div>
                 </div>
                 <div class="navbar-links">
@@ -61,18 +65,21 @@
                 </div>
             </div>
         </nav>
+        <!-- end of navbar -->
+        <!-- start of main-container -->
         <div class="main-container">
+            <!-- open and close nav menu -->
             <div class="nav-open-close">
                 <i class="fas fa-bars"></i>
             </div>
+            <!-- start of introduction -->
             <div class="introduction">
                 <h2>
                     Hi! My name is Thorben Bender<br>
                     I am a fullstack developer
                 </h2>
                 <p>
-                    On this page, you can see some of the work i done
-                    and learn more about me.
+                    On this page, you can see some of my work and learn more about me
                 </p>
                 <a href="#about-me">About Me</a>
                 <div class="video-container">
@@ -81,18 +88,22 @@
                     </video>
                 </div>
             </div>
+            <!-- end of introduction -->
+            <!-- start of portfolio -->
             <div class="portfolio">
                 <div class="portfolio-title">
                     <h2>Portfolio</h2>
                 </div>
                 <div class="portfolio-description">
-                    <p>These are some pictures, I took. If you want to see more of my work, go to the contact section.
-                        Or contact me on the social media sites.</p>
+                    <p>These are some of the projects i made, I took. If you want to see more of my work, go to the contact section or contact me on my social media.</p>
                 </div>
                 <div class="portfolio-box-section">
-                    <div class="portfolio-img-box">
+                    <div class="swipe-left">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="portfolio-img-box portfolio-img-box-selected">
                         <div class="porfolio-box-img">
-                            <img src="img/alex-knight-387110-unsplash.jpg" alt="text" />
+                            <img src="img/alex-knight-387110-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -100,7 +111,7 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/simon-zhu-983240-unsplash.jpg" alt="text" />
+                            <img src="img/simon-zhu-983240-unsplash-min-min-min.jpeg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -108,7 +119,7 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/journey-man-1348078-unsplash.jpg" alt="text" />
+                            <img src="img/journey-man-1348078-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -116,7 +127,7 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/maria-teneva-1343355-unsplash.jpg" alt="text" />
+                            <img src="img/maria-teneva-1343355-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -124,7 +135,7 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/anton-shuvalov-1349927-unsplash.jpg" alt="text" />
+                            <img src="img/anton-shuvalov-1349927-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -132,7 +143,7 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/alex-knight-326705-unsplash.jpg" alt="text" />
+                            <img src="img/alex-knight-326705-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
@@ -140,14 +151,19 @@
                     </div>
                     <div class="portfolio-img-box">
                         <div class="porfolio-box-img">
-                            <img src="img/clay-banks-170882-unsplash.jpg" alt="text" />
+                            <img src="img/clay-banks-170882-unsplash-min-min.jpg" alt="text" />
                         </div>
                         <div class="portfolio-box-description">
                             <p>Learn More</p>
                         </div>
+                    </div>
+                    <div class="swipe-right">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
+            <!-- end of portfolio -->
+            <!-- start of about me  -->
             <div class="about-me" id="about-me">
                 <div class="about-me-title">
                     <h2>
@@ -155,15 +171,16 @@
                     </h2>
                 </div>
                 <div class="about-me-photo">
-                    <img src="img/clay-banks-170882-unsplash.jpg" alt="picture of me" />
+                    <img src="img/clay-banks-170882-unsplash-min-min.jpg" alt="picture of me" />
                 </div>
                 <div class="about-me-description">
                     <p>
-                        My name is Thorben Bender and i'am a fullstack web developer. I'am 20 years old and live in
-                        Germany right now. I would love to work abroad ,learn different languages and meet new people.
+                        My name is Thorben Bender, I'm a 20 year old fullstack web developer, living in Germany. I would love to work abroad, learn different languages and meet new people.
                     </p>
                 </div>
             </div>
+            <!-- end of about me -->
+            <!-- start of contact -->
             <div class="contact">
                 <div class="contact-title">
                     <h2>
@@ -172,8 +189,7 @@
                 </div>
                 <div class="contact-description">
                     <p>
-                        This is section is for the people or who want to learn more about me or want to collaberate
-                        with me on their new project. I will try to reply as fast as possible.
+                        This section is for the those who want to learn more about me or want to collaberate with me on future projects. I will try to reply as fast as possible.
                     </p>
                 </div>
                 <div class="contact-user-information">
@@ -187,6 +203,8 @@
                     <button type="submit">Send Message</button>
                 </div>
             </div>
+            <!-- end of contact -->
+            <!-- start of footer -->
             <footer>
                 <div class="footer-copyright">
                     <p>
@@ -194,9 +212,11 @@
                     </p>
                 </div>
             </footer>
+            <!-- end of footer -->
         </div>
+        <!-- end of main-container -->
     </div>
-    </div>
+    <!-- end of body -container -->
 </body>
 
 </html>
