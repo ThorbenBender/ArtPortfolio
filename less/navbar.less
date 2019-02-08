@@ -45,6 +45,15 @@
                 margin-bottom: 2%;
             }
 
+            @media @phone {
+                .flex(column);
+                margin: 0;
+                justify-content: center;
+                height: 30%;
+                align-items: flex-end;
+                width: 90%;
+            }
+
 
             .nav-container-person-img {
                 width: 40%;
@@ -59,6 +68,11 @@
                     margin-top: 5%;
                 }
 
+                @media @phone {
+                    width: 35%;
+                    height: 35%;
+                }
+
                 img {
                     width: 80%;
                     height: 100%;
@@ -70,6 +84,9 @@
             }
 
             .nav-container-person-info {
+                @media @phone {
+                    text-align: right;
+                }
 
                 h4 {
                     text-align: right;
@@ -81,6 +98,10 @@
                     @media @tablet {
                         margin-bottom: 0.5rem;
                         font-size: 1.32rem;
+                    }
+
+                    @media @phone {
+                        font-size: 1rem;
                     }
                 }
 
